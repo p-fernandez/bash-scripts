@@ -9,5 +9,5 @@ if [[ -z $FRAME_RATE ]]; then
   FRAME_RATE=12
 fi
 
-ffmpeg -ss 00:00:00 -i "$OG_FILE" -r $FRAME_RATE -vf scale=400:-1 "$DEST_FILE"
+ffmpeg -ss 00:00:00 -i "$FILE" -r $FRAME_RATE -vf scale=400:-1 "$DEST_FILE"
 
